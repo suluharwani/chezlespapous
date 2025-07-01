@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
     <style>
         :root {
-            --primary-blue: #1a73e8;
-            --dark-blue: #0d47a1;
-            --light-blue: #e8f0fe;
+            --primary-blue: #223740;
+            --dark-blue:rgb(28, 114, 20);
+            --light-blue: #fbfaf9;
         }
         .bg-primary-blue {
             background-color: var(--primary-blue);
