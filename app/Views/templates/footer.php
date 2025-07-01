@@ -2,7 +2,7 @@
     /* WhatsApp Floating Button Styles */
     .whatsapp-float {
         position: fixed;
-        bottom: 30px;
+        bottom: 0px;
         right: 30px;
         z-index: 1000;
     }
