@@ -1,3 +1,37 @@
+    <style>
+    /* WhatsApp Floating Button Styles */
+    .whatsapp-float {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        z-index: 1000;
+    }
+    
+    .whatsapp-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+        height: 60px;
+        background-color: #25D366;
+        color: white;
+        border-radius: 50%;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease;
+    }
+    
+    .whatsapp-link:hover {
+        background-color: #128C7E;
+        transform: scale(1.1);
+        color: white;
+        text-decoration: none;
+    }
+    
+    .whatsapp-link i {
+        font-size: 36px;
+    }
+</style>
     <footer class="bg-dark text-white py-5 mt-5">
         <div class="container">
             <div class="row">
@@ -41,6 +75,11 @@
     </div>
 </div>
 
+<div class="whatsapp-float">
+    <a href="https://wa.me/6282238241043" target="_blank" class="whatsapp-link">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+</div>
 <script>
 // Lightbox functionality
 document.querySelectorAll('.gallery-item img').forEach(img => {
