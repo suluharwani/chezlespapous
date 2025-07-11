@@ -50,7 +50,7 @@
             <?php foreach ($destinations as $destination): ?>
                 <div class="col-md-4">
                     <div class="card h-100 shadow-sm">
-                        <img src="<?= $destination->image_url ?>" class="card-img-top"
+                        <img src="<?=$destination->image_url ?>" class="card-img-top"
                             alt="<?= $destination->name ?>">
                         <div class="card-body">
                             <h5 class="card-title"><?= $destination->name ?></h5>
