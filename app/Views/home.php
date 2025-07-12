@@ -11,7 +11,7 @@
                     <div class="hero-overlay"></div>
 
                     <!-- Gambar background full -->
-                    <img src="/assets/img/<?= $slider->image_url ?>" class="d-block w-100" alt="<?= $slider->title ?>">
+                    <img src="<?= $slider->image_url ?>" class="d-block w-100" alt="<?= $slider->title ?>">
 
                     <!-- Konten teks -->
                     <div class="container hero-content">
@@ -84,7 +84,7 @@
             <div class="col-lg-4 col-md-6">
                 <div class="card h-100 shadow-sm guide-card">
                     <div class="text-center pt-4">
-                        <img src="/assets/img/<?= $guide->photo_url ?>" 
+                        <img src="<?= $guide->photo_url ?>" 
                              class="guide-img"
                              alt="<?= $guide->full_name ?>"
                              loading="lazy">
@@ -137,7 +137,7 @@
             <?php foreach ($packages as $package): ?>
                 <div class="col-md-4">
                     <div class="card h-100 shadow-sm">
-                        <img src="/assets/img/<?= $package->image_url ?>" class="card-img-top" alt="<?= $package->name ?>">
+                        <img src="<?= $package->image_url ?>" class="card-img-top" alt="<?= $package->name ?>">
                         <div class="card-body">
                             <h5 class="card-title"><?= $package->name ?></h5>
                             <p class="card-text text-muted"><i class="bi bi-clock"></i> <?= $package->duration ?></p>
@@ -172,7 +172,7 @@
             <div class="col-lg-3 col-md-4 col-6 mb-4">
                 <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal" 
                      onclick="showGalleryImage('<?= $item->image_url ?>', '<?= $item->title ?>', '<?= $item->location ?>')">
-                    <img src="/assets/img/<?= $item->image_url ?>" 
+                    <img src="<?= $item->image_url ?>" 
                          class="img-fluid rounded shadow-sm gallery-thumb"
                          alt="<?= $item->title ?>"
                          loading="lazy">
@@ -212,7 +212,7 @@
 
 <script>
 function showGalleryImage(imageUrl, title, location) {
-    const fullImageUrl = `/assets/img/${imageUrl}`;
+    const fullImageUrl = `${imageUrl}`;
     document.getElementById('modalImage').src = fullImageUrl;
     document.getElementById('modalImage').alt = title;
     document.getElementById('modalTitle').textContent = title;
