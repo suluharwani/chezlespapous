@@ -71,60 +71,7 @@
     </div>
 </section>
 
-<!-- Tour Guide -->
-<section id="guides" class="py-5 bg-light-blue">
-    <div class="container">
-        <div class="text-center mb-5">
-            <h2 class="fw-bold text-primary-blue">Tour Guide Profesional</h2>
-            <p class="lead">Pemandu wisata bersertifikat di Raja Ampat</p>
-        </div>
-        
-        <div class="row g-4">
-            <?php foreach ($guides as $guide): ?>
-            <div class="col-lg-4 col-md-6">
-                <div class="card h-100 shadow-sm guide-card">
-                    <div class="text-center pt-4">
-                        <img src="<?= $guide->photo_url ?>" 
-                             class="guide-img"
-                             alt="<?= $guide->full_name ?>"
-                             loading="lazy">
-                    </div>
-                    <div class="card-body text-center">
-                        <h5 class="card-title"><?= $guide->full_name ?></h5>
-                        
-                        <!-- Rating -->
-                        <div class="mb-2">
-                            <?php for ($i = 1; $i <= 5; $i++): ?>
-                                <i class="bi bi-star-fill <?= $i <= round($guide->rating) ? 'text-warning' : 'text-secondary' ?>"></i>
-                            <?php endfor; ?>
-                            <span class="ms-1"><?= $guide->rating ?></span>
-                        </div>
-                        
-                        <!-- Specialization Badge -->
-                        <span class="badge bg-info mb-2">
-                            <?= ucfirst($guide->specialization) ?>
-                        </span>
-                        
-                        <p class="card-text"><i class="bi bi-translate"></i> <?= $guide->languages ?></p>
-                        <p class="card-text"><i class="bi bi-clock-history"></i> <?= $guide->years_experience ?> tahun pengalaman</p>
-                        
-                        <div class="d-flex justify-content-center align-items-center mt-3">
-                            <span class="badge bg-primary-blue me-2">
-                                Rp<?= number_format($guide->price_per_day, 0, ',', '.') ?>/hari
-                            </span>
-                            <a href="tel:<?= $guide->phone ?>" class="btn btn-sm btn-primary-blue">
-                                <i class="bi bi-telephone"></i> Hubungi
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <?php endforeach; ?>
-        </div>
-        
 
-    </div>
-</section>
 
 <!-- Paket Wisata -->
 <section id="packages" class="py-5 bg-light-blue">
